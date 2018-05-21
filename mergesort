@@ -226,7 +226,7 @@ cout<<endl;
 
 	cout<<"data sebelum di urutkan : ";
 	for(int e=1;e<=8;e++){
-	cout<<" "<<bill[e];
+	cout<<"  "<<bill[e];
 }
 sleep(3);
 system("cls");
@@ -234,7 +234,7 @@ int angka1=bill[1], angka2=bill[2], angka3=bill[3],  angka4=bill[4], angka5=bill
 mengurutkan_data( bill, angka1, angka2, angka3, angka4, angka5, angka6, angka7, angka8);
 
 cout<<" data setelah di urutkan : 		";
-cout<<bill[1]<<" "<<bill[2]<<" "<<bill[3]<<" "<<bill[4]<<"  "<<bill[5]<<" "<<bill[6]<<"  "<<bill[7]<<"  "<<bill[8];
+cout<<bill[1]<<"  "<<bill[2]<<"  "<<bill[3]<<"  "<<bill[4]<<"  "<<bill[5]<<"  "<<bill[6]<<"  "<<bill[7]<<"  "<<bill[8];
 	
 return 0;
 }
