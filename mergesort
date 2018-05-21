@@ -1,0 +1,240 @@
+#include<iostream>
+#include <unistd.h>
+using namespace std;
+
+void angka(int angka1, int angka2, int angka3, int angka4, int angka5, int angka6, int angka7, int angka8){
+	cout<<"mengurutkan data : 		"<<" "<<angka1<<" "<<"  "<<angka2<<" "<<" "<<angka3<<"  "<<angka4<<"  "<<angka5<<"  "<<angka6<<"  "<<angka7<<"  "<<angka8<<endl<<endl;
+}
+
+void sebagian(int angka5, int angka6, int angka7, int angka8){
+	cout<<angka5<<"  "<<angka6<<"  "<<angka7<<"  "<<angka8<<endl<<endl;
+}
+void sebagiankiri(int a, int b, int c, int d){
+	cout<<"                    "<<a<<"  "<<b<<"  "<<c<<"  "<<d;
+}
+
+void mengurutkan_data(int bill[],int angka1, int angka2, int angka3, int angka4, int angka5, int angka6, int angka7, int angka8){
+	
+	int a,b,c,d,e,f,g,h;
+	int aa,bb,cc,dd;
+	int ee,ff,gg,hh;
+	
+angka( angka1, angka2, angka3, angka4, angka5, angka6, angka7, angka8);
+	sleep(2);
+system("cls");
+	
+while(a>b || b>c || c>d ){
+	
+	angka( angka1, angka2, angka3, angka4, angka5, angka6, angka7, angka8);
+	cout<<"                   "<<"["<<bill[1]<<"]"<<" ["<<bill[2]<<"]"<<" "<<bill[3]<<"  "<<bill[4]<<" "<<"				";
+	sebagian(angka5, angka6, angka7, angka8);
+	sleep(2);
+system("cls");
+	
+	angka( angka1, angka2, angka3, angka4, angka5, angka6, angka7, angka8);
+	
+	if(bill[1]<bill[2]){
+	
+	cout<<"                   "<<"["<<bill[1]<<"]"<<" ["<<bill[2]<<"]"<<" "<<bill[3]<<"  "<<bill[4]<<" "<<" <--- tetap  			";
+	sebagian(angka5, angka6, angka7, angka8);
+	a=bill[1];
+	aa=bill[2];
+	sleep(2);
+system("cls");
+
+	}else {
+	cout<<"                   "<<"["<<bill[2]<<"]"<<" ["<<bill[1]<<"]"<<" "<<bill[3]<<"  "<<bill[4]<<" "<<" <--- bertukar			";
+	sebagian(angka5, angka6, angka7, angka8);
+	a=bill[2];
+	aa=bill[1];
+	sleep(2);
+system("cls");}
+	
+	angka( angka1, angka2, angka3, angka4, angka5, angka6, angka7, angka8);
+	cout<<"                   "<<" "<<a<<" "<<" ["<<aa<<"]"<<" ["<<bill[3]<<"] "<<bill[4]<<" "<<"				";
+	sebagian(angka5, angka6, angka7, angka8);
+	sleep(2);
+system("cls");
+	angka( angka1, angka2, angka3, angka4, angka5, angka6, angka7, angka8);
+	
+	if(aa<bill[3]){
+		cout<<"                   "<<" "<<a<<" "<<" ["<<aa<<"]"<<" ["<<bill[3]<<"] "<<bill[4]<<" "<<" <--- tetap  			";
+		sebagian(angka5, angka6, angka7, angka8);
+		b=aa;
+		bb=bill[3];
+		sleep(2);
+system("cls");
+	
+	}else {
+		cout<<"                   "<<" "<<a<<" "<<" ["<<bill[3]<<"]"<<" ["<<aa<<"]  "<<bill[4]<<" "<<" <--- bertukar		";
+		sebagian(angka5, angka6, angka7, angka8);
+		b=bill[3];
+		bb=aa;
+	sleep(2);
+system("cls");}
+
+	angka( angka1, angka2, angka3, angka4, angka5, angka6, angka7, angka8);
+	cout<<"                   "<<" "<<a<<"   "<<b<<" "<<" ["<<bb<<"] ["<<bill[4]<<"]"<<"				";
+	sebagian(angka5, angka6, angka7, angka8);
+	sleep(2);
+system("cls");
+	angka( angka1, angka2, angka3, angka4, angka5, angka6, angka7, angka8);
+
+	if(bb<bill[4]){
+		cout<<"                   "<<" "<<a<<" "<<"  "<<b<<" "<<" ["<<bb<<"] ["<<bill[4]<<"]"<<" <--- tetap  			";
+		sebagian(angka5, angka6, angka7, angka8);
+		c=bb;
+		cc=bill[4];
+		sleep(2);
+system("cls");
+	}else {
+		cout<<"                   "<<" "<<a<<" "<<"  "<<b<<" "<<" ["<<bill[4]<<"] ["<<bb<<"]"<<" <--- bertukar		";
+		sebagian(angka5, angka6, angka7, angka8);
+		c=bill[4];
+		cc=bb;
+		sleep(2);
+system("cls");
+	}
+	angka( angka1, angka2, angka3, angka4, angka5, angka6, angka7, angka8);
+	cout<<"                   "<<" "<<a<<"   "<<b<<" "<<" ["<<c<<"] ["<<cc<<"]"<<"				";
+	sebagian(angka5, angka6, angka7, angka8);
+	d=cc;
+	sleep(2);
+system("cls");
+
+bill[1]=a; bill[2]=b; bill[3]=c; bill[4]=d;
+}
+
+
+while(e>f || f>g || g>h){
+	
+	angka( angka1, angka2, angka3, angka4, angka5, angka6, angka7, angka8);
+	sebagiankiri(a,b,c,d);
+	cout<<"				"<<"["<<bill[5]<<"]"<<" ["<<bill[6]<<"]"<<" "<<bill[7]<<"  "<<bill[8]<<" "<<"				";
+	sleep(2);
+system("cls");
+	
+	angka( angka1, angka2, angka3, angka4, angka5, angka6, angka7, angka8);
+	
+	if(bill[5]<bill[6]){
+	sebagiankiri(a,b,c,d);
+	cout<<"				"<<"["<<bill[5]<<"]"<<" ["<<bill[6]<<"]"<<" "<<bill[7]<<"  "<<bill[8]<<" "<<" <--- tetap  			";
+	
+	e=bill[5];
+	ee=bill[6];
+	sleep(2);
+system("cls");
+
+	}else {
+	sebagiankiri(a,b,c,d);
+	cout<<"				"<<"["<<bill[6]<<"]"<<" ["<<bill[5]<<"]"<<" "<<bill[7]<<"  "<<bill[8]<<" "<<" <--- bertukar			";
+	e=bill[6];
+	ee=bill[5];
+	sleep(2);
+system("cls");}
+	
+	angka( angka1, angka2, angka3, angka4, angka5, angka6, angka7, angka8);
+	sebagiankiri(a,b,c,d);
+	cout<<"				"<<" "<<e<<" "<<" ["<<ee<<"]"<<" ["<<bill[7]<<"] "<<bill[8]<<" "<<"				";
+	sleep(2);
+system("cls");
+	angka( angka1, angka2, angka3, angka4, angka5, angka6, angka7, angka8);
+	
+	if(ee<bill[7]){
+		sebagiankiri(a,b,c,d);
+		cout<<"				"<<" "<<e<<" "<<" ["<<ee<<"]"<<" ["<<bill[7]<<"] "<<bill[8]<<" "<<" <--- tetap  			";
+		f=ee;
+		ff=bill[7];
+		sleep(2);
+system("cls");
+	
+	}else {
+		sebagiankiri(a,b,c,d);
+		cout<<"				"<<" "<<e<<" "<<" ["<<bill[7]<<"]"<<" ["<<ee<<"]  "<<bill[8]<<" "<<" <--- bertukar		";
+		f=bill[7];
+		ff=ee;
+	sleep(2);
+system("cls");}
+
+	angka( angka1, angka2, angka3, angka4, angka5, angka6, angka7, angka8);
+	sebagiankiri(a,b,c,d);
+	cout<<"				"<<" "<<e<<"   "<<f<<" "<<" ["<<ff<<"] ["<<bill[8]<<"]"<<"				";
+	sleep(2);
+system("cls");
+	angka( angka1, angka2, angka3, angka4, angka5, angka6, angka7, angka8);
+
+	if(ff<bill[8]){
+		sebagiankiri(a,b,c,d);
+		cout<<"				"<<" "<<e<<" "<<"  "<<f<<" "<<" ["<<ff<<"] ["<<bill[8]<<"]"<<" <--- tetap  			";
+		g=ff;
+		gg=bill[8];
+		sleep(2);
+system("cls");
+	}else {
+		sebagiankiri(a,b,c,d);
+		cout<<"				"<<" "<<e<<" "<<"  "<<f<<" "<<" ["<<bill[8]<<"] ["<<ff<<"]"<<" <--- bertukar		";
+		g=bill[8];
+		gg=ff;
+		sleep(2);
+system("cls");
+	}
+	angka( angka1, angka2, angka3, angka4, angka5, angka6, angka7, angka8);
+	sebagiankiri(a,b,c,d);
+	cout<<"				"<<" "<<e<<"   "<<f<<" "<<" ["<<g<<"] ["<<gg<<"]"<<"				";
+	h=gg;
+	sleep(2);
+system("cls");
+	
+bill[5]=e; bill[6]=f; bill[7]=g; bill[8]=h;	
+}
+
+	
+cout<<"mengurutkan data : 	";
+	cout<<a<<" "<<b<<" "<<c<<" "<<d<<"		 "<<e<<" "<<f<<"  "<<g<<"  "<<h;
+	sleep(3);
+system("cls");
+
+bill[1]=a;bill[2]=b;bill[3]=c;bill[4]=d;bill[5]=e;bill[6]=f;bill[7]=g;bill[8]=h;
+
+int x,y;
+	
+    for (int i = 1; i <= 8; i++){
+        x = i;
+        
+    	for (int j = i; j <= 8; j++)
+        	if (bill[j] < bill[x])
+			x = j;
+ 
+    y = bill[i];
+ 	bill[i] = bill[x];
+	bill[x] = y;
+	
+    }
+
+}
+
+
+int main(){
+
+	int bill[8];	
+	cout<<"input 8 bilangan menggunakan spasi: ";
+	for(int e=1;e<=8;e++){
+	
+	cin>>bill[e];
+}
+cout<<endl;
+
+	cout<<"data sebelum di urutkan : ";
+	for(int e=1;e<=8;e++){
+	cout<<" "<<bill[e];
+}
+sleep(3);
+system("cls");
+int angka1=bill[1], angka2=bill[2], angka3=bill[3],  angka4=bill[4], angka5=bill[5], angka6=bill[6], angka7=bill[7], angka8=bill[8];
+mengurutkan_data( bill, angka1, angka2, angka3, angka4, angka5, angka6, angka7, angka8);
+
+cout<<" data setelah di urutkan : 		";
+cout<<bill[1]<<" "<<bill[2]<<" "<<bill[3]<<" "<<bill[4]<<"  "<<bill[5]<<" "<<bill[6]<<"  "<<bill[7]<<"  "<<bill[8];
+	
+return 0;
+}
