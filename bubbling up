@@ -1,0 +1,100 @@
+#include<iostream>
+#include <unistd.h>
+using namespace std;
+
+void mengurutkan_data(int bill[]){
+	
+	int a,b,c,d,e;
+	int aa,bb,cc,dd;
+	
+while(a>b || b>c || c>d || d>e){
+	
+	cout<<"mengurutkan data : "<<"["<<bill[1]<<"]"<<" ["<<bill[2]<<"]"<<" "<<bill[3]<<"  "<<bill[4]<<"  "<<bill[5];
+	sleep(2);
+system("cls");
+	if(bill[1]<bill[2]){
+	
+	cout<<"mengurutkan data : "<<"["<<bill[1]<<"]"<<" ["<<bill[2]<<"]"<<" "<<bill[3]<<"  "<<bill[4]<<"  "<<bill[5]<<"  <--- tetap";
+	a=bill[1];
+	aa=bill[2];
+	sleep(2);
+system("cls");
+	}else {
+	cout<<"mengurutkan data : "<<"["<<bill[2]<<"]"<<" ["<<bill[1]<<"]"<<" "<<bill[3]<<"  "<<bill[4]<<"  "<<bill[5]<<"  <--- bertukar";
+	a=bill[2];
+	aa=bill[1];
+	sleep(2);
+system("cls");}
+	
+	cout<<"mengurutkan data :  "<<a<<" ["<<aa<<"]"<<" ["<<bill[3]<<"] "<<bill[4]<<"  "<<bill[5];
+		sleep(2);
+system("cls");
+	if(aa<bill[3]){
+		cout<<"mengurutkan data :  "<<a<<" ["<<aa<<"]"<<" ["<<bill[3]<<"] "<<bill[4]<<"  "<<bill[5]<<"  <--- tetap";
+		b=aa;
+		bb=bill[3];
+		sleep(2);
+system("cls");}else {
+		cout<<"mengurutkan data :  "<<a<<" ["<<bill[3]<<"]"<<" ["<<aa<<"] "<<bill[4]<<"  "<<bill[5]<<"  <--- bertukar";
+		b=bill[3];
+		bb=aa;
+	sleep(2);
+system("cls");}
+	
+	cout<<"mengurutkan data :  "<<a<<"  "<<b<<" ["<<bb<<"]"<<" ["<<bill[4]<<"] "<<bill[5];
+	sleep(2);
+system("cls");
+	if(bb<bill[4]){
+		cout<<"mengurutkan data :  "<<a<<"  "<<b<<" ["<<bb<<"]"<<" ["<<bill[4]<<"] "<<bill[5]<<"  <--- tetap";
+		c=bb;
+		cc=bill[4];
+		sleep(2);
+system("cls");}else{
+		cout<<"mengurutkan data :  "<<a<<"  "<<b<<" ["<<bill[4]<<"]"<<" ["<<bb<<"] "<<bill[5]<<"  <--- bertukar";
+		c=bill[4];
+		cc=bb;
+		sleep(2);
+system("cls");}
+	
+	cout<<"mengurutkan data :  "<<a<<"  "<<b<<"  "<<c<<" ["<<cc<<"]"<<" ["<<bill[5]<<"]";
+		sleep(2);
+system("cls");
+	if(cc<bill[5]){
+		cout<<"mengurutkan data :  "<<a<<"  "<<b<<"  "<<c<<" ["<<cc<<"]"<<" ["<<bill[5]<<"]"<<"  <--- tetap";
+		d=cc;
+		e=bill[5];
+		sleep(2);
+system("cls");}else {
+		cout<<"mengurutkan data :  "<<a<<"  "<<b<<"  "<<c<<" ["<<bill[5]<<"]"<<" ["<<cc<<"]"<<"  <--- bertukar";
+		d=bill[5];
+		e=cc;
+		sleep(2);
+system("cls");}
+
+bill[1]=a; bill[2]=b; bill[3]=c; bill[4]=d; bill[5]=e;
+}
+cout<<"data setelah di urutkan : ";
+	cout<<a<<" "<<b<<" "<<c<<" "<<d<<" "<<e;	
+}
+
+int main(){
+
+	int bill[5];	
+	cout<<"input 5 bilangan menggunakan spasi: ";
+	for(int e=1;e<=5;e++){
+	
+	cin>>bill[e];
+}
+cout<<endl;
+
+	cout<<"data sebelum di urutkan : ";
+	for(int e=1;e<=5;e++){
+	cout<<" "<<bill[e];
+}
+sleep(3);
+system("cls");
+
+mengurutkan_data(bill);
+
+return 0;
+}
