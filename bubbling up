@@ -2,7 +2,7 @@
 #include <unistd.h>
 using namespace std;
 
-void mengurutkan_data(int bill[]){
+void mengurutkan_data2(int bill[]){
 	
 	int a,b,c,d,e;
 	int aa,bb,cc,dd;
@@ -94,7 +94,7 @@ cout<<endl;
 sleep(3);
 system("cls");
 
-mengurutkan_data(bill);
+mengurutkan_data2(bill);
 
 return 0;
 }
