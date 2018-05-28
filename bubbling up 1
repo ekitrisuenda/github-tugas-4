@@ -1,0 +1,50 @@
+#include<iostream>
+
+using namespace std;
+
+void mengurutkan(float bill[], int n)
+{
+
+	
+    for (int i = 0; i < n; i++){
+        
+        
+    	for (int j = i+1; j < n; j++){
+		
+        	if (bill[i] > bill[j]){
+			
+			
+ 
+  swap(bill[i],bill[j]);
+	
+    }
+}
+
+}
+}
+
+int main(){
+	int angka;
+	float bill[50];
+	cout<<"brapa banyak angka : ";
+	cin>>angka;
+	cout<<"input bilangan menggunakan spasi: ";
+	for(int e=0;e<angka;e++){
+	
+	cin>>bill[e];
+}
+cout<<endl;
+
+	cout<<"data sebelum di urutkan : ";
+	for(int e=0;e<angka;e++){
+	cout<<" "<<bill[e];
+}
+cout<<endl;
+
+ 	mengurutkan(bill,angka);
+ 	cout<<"Data setelah diurutkan : ";
+	 for (int e=0; e<angka; e++)
+ 	cout<<" "<<bill[e];
+ 
+ return 0;	
+}
