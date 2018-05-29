@@ -1,0 +1,442 @@
+#include<iostream>
+#include <unistd.h>
+using namespace std;
+
+void angkamasukan(int bill[]){
+cout<<"mengurutkan data : 	"<<bill[1]<<"  "<<bill[2]<<"  "<<bill[3]<<"  "<<bill[4]<<"  "<<bill[5]<<"  "<<bill[6]<<"  "<<bill[7]<<"  "<<bill[8];	
+}
+
+void angkaproses(int bill[]){
+cout<<"mengurutkan data : 	"<<"            "<<bill[5]<<"  "<<bill[6]<<"  "<<bill[7]<<"  "<<bill[8];	
+}
+
+void angkaproses2(int bill[]){
+cout<<"mengurutkan data : 	"<<bill[1]<<"  "<<bill[2]<<"  "<<bill[3]<<"  "<<bill[4];	
+}
+
+void banyak4angka(int bill[]){
+	int a,b,c,d;
+	int aa,bb,cc;
+	
+	while(a>b || b>c || c>d){
+	
+	bill[1];bill[2];bill[3];bill[4];
+
+if(bill[1]<bill[2]){
+	a=bill[1];
+	aa=bill[2];
+}else {
+	a=bill[2];
+	aa=bill[1];
+}
+	
+if(aa<bill[3]){
+		
+	b=aa;
+	bb=bill[3];
+}else {
+	b=bill[3];
+	bb=aa;
+}
+	
+if(bb<bill[4]){
+	c=bb;
+	d=bill[4];
+}else{
+	c=bill[4];
+	d=bb;
+}
+
+bill[1]=a;bill[2]=b;bill[3]=c;bill[4]=d;
+
+}
+cout<<"			"<<a<<" "<<b<<" "<<c<<" "<<d<<" <-- mengurutkan";
+
+}
+
+void banyak4angka2(int bill[]){
+	int a,b,c,d;
+	int aa,bb,cc;
+	
+	while(a>b || b>c || c>d){
+	
+	bill[5];bill[6];bill[7];bill[8];
+
+if(bill[5]<bill[6]){
+	a=bill[5];
+	aa=bill[6];
+}else {
+	a=bill[6];
+	aa=bill[5];
+}
+	
+if(aa<bill[7]){
+		
+	b=aa;
+	bb=bill[7];
+}else {
+	b=bill[7];
+	bb=aa;
+}
+	
+if(bb<bill[8]){
+	c=bb;
+	d=bill[8];
+}else{
+	c=bill[8];
+	d=bb;
+}
+
+bill[5]=a;bill[6]=b;bill[7]=c;bill[8]=d;
+
+}
+cout<<"				   "<<a<<" "<<b<<" "<<c<<" "<<d<<" <-- mengurutkan";
+
+}
+
+void mengurutkan(int bill[]){
+	int a;
+	int aa;
+angkamasukan(bill);	
+sleep(2);
+system("cls");
+//=============================={ bagiankiri }=========================awal + bagian 1
+angkaproses(bill);
+cout<<endl<<endl;
+
+cout<<"			"<<bill[1]<<" "<<bill[2]<<" "<<bill[3]<<" "<<bill[4];	
+sleep(2);
+system("cls");
+//=======================================================bagian 2
+angkaproses(bill);
+cout<<endl<<endl;
+
+cout<<"			    "<<bill[3]<<" "<<bill[4];	
+cout<<endl<<endl;
+
+cout<<"		      "<<bill[1]<<" "<<bill[2];
+sleep(2);
+system("cls");	
+//=======================================================bagian 3
+angkaproses(bill);
+cout<<endl<<endl;
+
+cout<<"			    "<<bill[3]<<" "<<bill[4];	
+cout<<endl<<endl;
+
+cout<<"		         "<<bill[2];
+cout<<endl<<endl;
+
+cout<<"		     "<<bill[1];
+sleep(2);
+system("cls");
+//======================================================= bagian 2
+angkaproses(bill);
+cout<<endl<<endl;
+
+cout<<"			    "<<bill[3]<<" "<<bill[4];	
+cout<<endl<<endl;
+
+cout<<"		      "<<bill[1]<<" "<<bill[2];
+sleep(2);
+system("cls");
+//=======================================================bagian 3
+angkaproses(bill);
+cout<<endl<<endl;
+
+cout<<"			    "<<bill[3]<<" "<<bill[4];	
+cout<<endl<<endl;
+
+cout<<"		      "<<bill[1];
+cout<<endl<<endl;
+
+cout<<"		       "<<bill[2];
+sleep(2);
+system("cls");
+//======================================================= bagian 2
+angkaproses(bill);
+cout<<endl<<endl;
+
+cout<<"			    "<<bill[3]<<" "<<bill[4];	
+cout<<endl<<endl;
+
+cout<<"		      "<<bill[1]<<" "<<bill[2];
+sleep(2);
+system("cls");
+//======================================================= bagian 2
+angkaproses(bill);
+cout<<endl<<endl;
+
+cout<<"			    "<<bill[3]<<" "<<bill[4];	
+cout<<endl<<endl;
+
+if(bill[1]>bill[2]){
+cout<<"		      "<<bill[2]<<" "<<bill[1]<<" <-- bertukar";
+a=bill[2];
+aa=bill[1];
+}else{
+	cout<<"		      "<<bill[1]<<" "<<bill[2]<<" <--tetap";
+	a=bill[1];
+	aa=bill[2];
+}
+
+sleep(2);
+system("cls");
+//======================================================= bagian 1
+angkaproses(bill);
+cout<<endl<<endl;
+
+cout<<"			"<<a<<" "<<aa<<" "<<bill[3]<<" "<<bill[4];	
+sleep(2);
+system("cls");
+//======================================================= awal
+angkaproses(bill);
+cout<<endl<<endl;
+banyak4angka(bill);
+sleep(2);
+system("cls");
+
+angkamasukan(bill);
+sleep(2);
+
+}
+
+void mengurutkan2(int bill[]){
+	int a;
+	int aa;
+angkamasukan(bill);	
+sleep(2);
+system("cls");
+//=============================={ bagiankiri }=========================awal + bagian 1
+angkaproses2(bill);
+cout<<endl<<endl;
+cout<<"				   "<<bill[5]<<" "<<bill[6]<<" "<<bill[7]<<" "<<bill[8];	
+sleep(2);
+system("cls");
+//=======================================================bagian 2
+angkaproses2(bill);
+cout<<endl<<endl;
+
+cout<<"			    		  "<<bill[7]<<" "<<bill[8];	
+cout<<endl<<endl;
+
+cout<<"		      		   "<<bill[5]<<" "<<bill[6];
+sleep(2);
+system("cls");
+//=======================================================bagian 3
+angkaproses2(bill);
+cout<<endl<<endl;
+
+cout<<"			    		  "<<bill[7]<<" "<<bill[8];	
+cout<<endl<<endl;
+
+cout<<"		      		     "<<bill[6];
+cout<<endl<<endl;
+
+cout<<"		     		 "<<bill[5];
+sleep(2);
+system("cls");
+//=======================================================bagian 2
+angkaproses2(bill);
+cout<<endl<<endl;
+
+cout<<"			    		  "<<bill[7]<<" "<<bill[8];	
+cout<<endl<<endl;
+
+cout<<"		      		   "<<bill[5]<<" "<<bill[6];
+sleep(2);
+system("cls");
+//=======================================================bagian 3
+angkaproses2(bill);
+cout<<endl<<endl;
+
+cout<<"			    		  "<<bill[7]<<" "<<bill[8];	
+cout<<endl<<endl;
+
+cout<<"		      		   "<<bill[5];
+cout<<endl<<endl;
+
+cout<<"		      		     "<<bill[6];
+sleep(2);
+system("cls");
+//=======================================================bagian 2
+angkaproses2(bill);
+cout<<endl<<endl;
+
+cout<<"			    		  "<<bill[7]<<" "<<bill[8];	
+cout<<endl<<endl;
+
+cout<<"		      		   "<<bill[5]<<" "<<bill[6];
+sleep(2);
+system("cls");
+//======================================================= bagian 2
+angkaproses2(bill);
+cout<<endl<<endl;
+
+cout<<"			    		  "<<bill[7]<<" "<<bill[8];	
+cout<<endl<<endl;
+
+if(bill[5]>bill[6]){
+cout<<"		      		   "<<bill[6]<<" "<<bill[5]<<" <-- bertukar";
+a=bill[6];
+aa=bill[5];
+}else{
+	cout<<"		      		   "<<bill[5]<<" "<<bill[6]<<" <--tetap";
+	a=bill[5];
+	aa=bill[6];
+}
+
+sleep(2);
+system("cls");
+//======================================================= bagian 1
+angkaproses2(bill);
+cout<<endl<<endl;
+
+cout<<"				   "<<a<<" "<<aa<<" "<<bill[7]<<" "<<bill[8];	
+sleep(2);
+system("cls");
+//======================================================= awal
+angkaproses2(bill);
+cout<<endl<<endl;
+
+banyak4angka2(bill);
+sleep(2);
+system("cls");
+
+angkamasukan(bill);
+sleep(2);
+system("cls");
+
+}
+
+void mergelanjut(int bill[]){
+	
+cout<<"mengurutkan data : 	"<<bill[1]<<"  "<<bill[2]<<"  "<<bill[3]<<"  "<<bill[4]<<"    "<<bill[5]<<"  "<<bill[6]<<"  "<<bill[7]<<"  "<<bill[8];
+sleep(2);
+system("cls");
+
+cout<<"mengurutkan data : 	"<<"["<<bill[1]<<"]  "<<bill[2]<<"  "<<bill[3]<<"  "<<bill[4]<<"    ["<<bill[5]<<"]  "<<bill[6]<<"  "<<bill[7]<<"  "<<bill[8]<<endl;
+///if pertama
+if(bill[1]>bill[5]){
+cout<<"		"<<bill[5];
+sleep(2);
+system("cls");
+
+cout<<"mengurutkan data : 	"<<"["<<bill[1]<<"]  "<<bill[2]<<"  "<<bill[3]<<"  "<<bill[4]<<"    "<<bill[5]<<"  ["<<bill[6]<<"]  "<<bill[7]<<"  "<<bill[8]<<endl;
+	if(bill[1]>bill[6]){
+		cout<<"		"<<bill[5]<<" "<<bill[6];
+		sleep(2);
+		system("cls");
+		cout<<"mengurutkan data : 	"<<"["<<bill[1]<<"]  "<<bill[2]<<"  "<<bill[3]<<"  "<<bill[4]<<"    "<<bill[5]<<"  "<<bill[6]<<"  ["<<bill[7]<<"]  "<<bill[8]<<endl;
+		if(bill[1]>bill[7]){
+			cout<<"		"<<bill[5]<<" "<<bill[6]<<" "<<bill[7];
+			sleep(2);
+		system("cls");
+		}else{
+			cout<<"		"<<bill[5]<<" "<<bill[6]<<" "<<bill[1];
+			sleep(2);
+		system("cls");
+		}	
+	}else{
+		cout<<"		"<<bill[5]<<" "<<bill[1];
+		sleep(2);
+		system("cls");
+		cout<<"mengurutkan data : 	"<<bill[1]<<"  ["<<bill[2]<<"]  "<<bill[3]<<"  "<<bill[4]<<"    "<<bill[5]<<"  ["<<bill[6]<<"]  "<<bill[7]<<"  "<<bill[8]<<endl;
+		if(bill[6]>bill[2]){
+			cout<<"		"<<bill[5]<<" "<<bill[1]<<" "<<bill[2];
+			sleep(2);
+		system("cls");
+		}else{
+			cout<<"		"<<bill[5]<<" "<<bill[1]<<" "<<bill[7];
+			sleep(2);
+		system("cls");
+		}	
+	}
+
+
+///batas if pertama
+}else{
+cout<<"		"<<bill[1];
+sleep(2);
+system("cls");
+
+cout<<"mengurutkan data : 	"<<bill[1]<<"  ["<<bill[2]<<"]  "<<bill[3]<<"  "<<bill[4]<<"    ["<<bill[5]<<"]  "<<bill[6]<<"  "<<bill[7]<<"  "<<bill[8]<<endl;
+}
+sleep(2);
+system("cls");
+
+cout<<"mengurutkan data : 	"<<bill[1]<<"  ["<<bill[2]<<"]  "<<bill[3]<<"  "<<bill[4]<<"    ["<<bill[5]<<"]  "<<bill[6]<<"  "<<bill[7]<<"  "<<bill[8]<<endl;
+	if(bill[2]>bill[5]){
+		cout<<"		"<<bill[1]<<" "<<bill[5];
+		sleep(2);
+		system("cls");
+		cout<<"mengurutkan data : 	"<<bill[1]<<"  ["<<bill[2]<<"]  "<<bill[3]<<"  "<<bill[4]<<"    "<<bill[5]<<"  ["<<bill[6]<<"]  "<<bill[7]<<"  "<<bill[8]<<endl;
+		if(bill[2]>bill[6]){
+			cout<<"		"<<bill[1]<<" "<<bill[5]<<" "<<bill[6];
+			sleep(2);
+		system("cls");
+		}else{
+			cout<<"		"<<bill[1]<<" "<<bill[5]<<" "<<bill[2];
+			sleep(2);
+		system("cls");
+		}	
+	}else{
+		cout<<"		"<<bill[1]<<" "<<bill[2];
+		sleep(2);
+		system("cls");
+		cout<<"mengurutkan data : 	"<<bill[1]<<"  "<<bill[2]<<"  ["<<bill[3]<<"]  "<<bill[4]<<"    ["<<bill[5]<<"]  "<<bill[6]<<"  "<<bill[7]<<"  "<<bill[8]<<endl;
+		if(bill[3]>bill[5]){
+			cout<<"		"<<bill[1]<<" "<<bill[2]<<" "<<bill[5];
+			sleep(2);
+		system("cls");
+		}else{
+			cout<<"		"<<bill[1]<<" "<<bill[2]<<" "<<bill[3];
+			sleep(2);
+		system("cls");
+		}	
+	}
+
+}
+
+void selectionsort(int bill[]){
+	
+	for(int i=1;i<=8;i++){
+		for(int j=i+1;j<=8;j++){
+			if(bill[i]>bill[j]){
+				swap(bill[i],bill[j]);
+			}
+		}
+	}
+}
+
+int main(){
+
+	int bill[8];	
+	cout<<"input 8 bilangan menggunakan spasi: ";
+	for(int e=1;e<=8;e++){
+	
+	cin>>bill[e];
+}
+cout<<endl;
+
+	cout<<"data sebelum di urutkan : ";
+	for(int e=1;e<=8;e++){
+	cout<<"  "<<bill[e];
+}
+sleep(3);
+system("cls");
+int angka1=bill[1], angka2=bill[2], angka3=bill[3],  angka4=bill[4], angka5=bill[5], angka6=bill[6], angka7=bill[7], angka8=bill[8];
+mengurutkan(bill);
+system("cls");
+
+mengurutkan2(bill);
+
+mergelanjut(bill);
+
+selectionsort(bill);
+
+cout<<" data setelah di urutkan : 		";
+cout<<bill[1]<<"  "<<bill[2]<<"  "<<bill[3]<<"  "<<bill[4]<<"  "<<bill[5]<<"  "<<bill[6]<<"  "<<bill[7]<<"  "<<bill[8];
+	
+return 0;
+}
